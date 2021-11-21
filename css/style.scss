@@ -1,0 +1,217 @@
+@import "_mixin";
+@import "_technology";
+@import "_beauty";
+@import "_account";
+@import "_shop";
+@import "_beanie";
+@import "_header_footer";
+@import "_animations";
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+// .posts {
+//     background-color: #F0F2F5;
+//     padding: 70px 0;
+
+//     .contain {
+        
+
+//         h1 {
+//             font-size: 36px;
+//             font-family: 'Red Hat Display', sans-serif;
+//             font-weight: 900;
+//             margin-bottom: 30px;
+//         }
+
+//         .boxes {
+//             // padding: 0 15px;
+
+//             .box {
+//                 padding: 30px;
+//                 border: 1px solid rgba(0, 0, 0, 0.253);
+//                 border-radius: 10px;
+//                 transition: 0.4s ease-in-out;
+
+//                 .box-left {
+//                     width: 48%;
+
+//                     a {
+//                         text-decoration: none;
+
+//                         &.lifestyle {
+//                             color: #D93E40;
+//                             padding: 15px 0;
+//                             display: inline-block;
+//                             font-weight: 600;
+//                         }
+
+//                         &.post-head {
+//                             color: black;
+//                             font-size: 26px;
+//                             line-height: 0.5;
+//                             font-weight: 900;
+//                         }
+
+
+//                     }
+
+//                     h2 {
+//                         margin-bottom: 40px;
+//                         line-height: 1;
+//                         font-weight: 900;
+//                     }
+
+//                     .bottom {
+//                         img {
+//                             border-radius: 50%;
+//                             margin-right: 20px;
+//                             width: 50px;
+//                             height: 50px;
+//                             object-fit: cover;
+//                         }
+
+//                         a {
+//                             color: black;
+//                         }
+
+//                         ul {
+//                             li {
+//                                 margin-right: 12px;
+//                                 color: #65676B;
+//                                 font-size: 12px;
+
+//                                 &.separator {
+//                                     position: relative;
+
+//                                     &::before {
+//                                         content: "";
+//                                         position: absolute;
+//                                         top: 50%;
+//                                         left: 50%;
+//                                         transform: translate(-50%, -50%);
+//                                         width: 6px;
+//                                         height: 6px;
+//                                         background-color: #878787;
+//                                         border-radius: 50%;
+//                                     }
+//                                 }
+//                             }
+
+//                         }
+//                     }
+//                 }
+
+//                 .box-right {
+//                     width: 45%;
+//                     padding: 15px 0;
+
+//                     .img-box {
+//                         border-radius: 50%;
+//                         overflow: hidden;
+//                         width: 250px;
+//                         height: 250px;
+
+//                         img {
+//                             width: 100%;
+//                             height: 100%;
+//                             object-fit: cover;
+//                             transition: 0.4s ease-in-out;
+//                         }
+//                     }
+
+//                 }
+
+//                 &:hover {
+//                     background-color: white;
+
+//                     .box-right {
+//                         img {
+//                             transform: scale(1.1);
+//                             cursor: pointer;
+//                         }
+//                     }
+//                 }
+//             }
+
+//         }
+//         .box{
+//             a{
+//                 img{
+//                     border-radius: 10px;
+//                     margin-bottom: 20px;
+//                 }
+//             }
+//             .tech {
+//                 overflow: hidden;
+//                 font-weight: 600;
+//                 font-size: 14px;
+
+//                 .tech-link {
+//                     text-decoration: none;
+//                     color: #D93E40;
+//                     position: relative;
+//                     display: inline-block;
+//                     transition: 0.4s ease-in-out;
+
+//                     .blue {
+//                         position: absolute;
+//                         top: 100%;
+//                         left: 0;
+//                         color: #3858F6;
+//                         opacity: 0;
+//                         // transition: 0.4s ease-in-out;
+//                     }
+
+//                     &:hover {
+//                         transform: translateY(-100%);
+
+//                         .red {
+//                             opacity: 0;
+//                         }
+
+//                         .blue {
+//                             opacity: 1;
+//                         }
+//                     }
+
+//                 }
+//             }
+//             h3{
+//                 line-height: 0.8;
+//                 a {
+//                     text-decoration: none;
+//                     color: black;
+//                     font-size: 18px;
+//                     font-weight: 700;
+//                     // line-height: 1;
+//                     background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+//                     background-repeat: no-repeat;
+//                     background-size: 0px 2px;
+//                     background-position: 0px 95%;
+//                     transition: 0.4s ease-in-out;
+                    
+//                 }
+//             }
+//             &:hover{
+//                 h3{
+//                     a {
+
+//                         background-size: 100% 2px;
+//                     }
+//                 }
+//             }
+            
+//         }
+
+//     }
+
+// }
+.shop{
+    padding: 70px 0;
+    .contain{
+        @include contain;
+
+    }
+}

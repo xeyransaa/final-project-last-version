@@ -1,0 +1,18 @@
+@mixin heading{
+    font-size: 36px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+}
+
+@mixin padding{
+    padding: 75px 0;
+}
+
+@mixin contain{
+    margin: auto;
+    width: 92%;
+}
+
+@mixin transition{
+    transition: 0.3s ease-in-out;
+}

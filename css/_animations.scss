@@ -1,0 +1,73 @@
+
+
+
+
+@mixin ani_fly_text($before,$after) {
+    
+    position: relative;
+    span {
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        color: transparent;
+        &:before {
+            color: $before;
+            content: attr(data-text);
+            display: block;
+            position: absolute;
+            top: 0%;
+            transition: 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        &:after {
+            color: $after;
+            content: attr(data-text);
+            display: block;
+            position: absolute;
+            transition: 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+            top: 108%;
+            transform: skewY(7deg);
+            visibility: hidden;
+        }
+    }
+    &:hover {
+        span {
+            &:before {
+                top: -108%;
+                transform: skewY(7deg);
+                visibility: hidden;
+            }
+            &:after {
+                top: 0%;
+                transform: skewY(0deg);
+                visibility: visible
+            }
+        }
+    }
+}
+
+
+
+
+
+.ani_underline {
+    position: relative;
+    display: inline;
+    background: linear-gradient(#000000);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-origin: content-box;
+    transition: background-size 0.3s;
+}
+.ani_underline_hov {
+    background-size: 100% 2px;
+}
+
+
+
+
+
+
+
+
+
