@@ -14,31 +14,51 @@
 
                     .tech-link {
                         text-decoration: none;
-                        color: #D93E40;
-                        position: relative;
-                        display: inline-block;
-                        transition: 0.4s ease-in-out;
+                            color: #D93E40;
+                            position: relative;
+                            display: inline-block;
+                            height: 20px;
 
-                        .blue {
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            color: #3858F6;
-                            opacity: 0;
                             // transition: 0.4s ease-in-out;
-                        }
-
-                        &:hover {
-                            transform: translateY(-100%);
-
                             .red {
-                                opacity: 0;
+                                transform: skewY(0);
+                                display: inline-block;
+                                top: 0;
+                                left: 0;
+                                position: absolute;
+                                // transition: 0.3s ease-in-out;
+                                transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+
                             }
 
                             .blue {
-                                opacity: 1;
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                color: #3858F6;
+                                opacity: 0;
+                                transform: skewY(7deg);
+                                display: inline-block;
+                                // transition: 0.3s ease-in-out;
+                                transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+
                             }
-                        }
+
+                            &:hover {
+                                // transform: translateY(-100%);
+
+                                .red {
+                                    opacity: 0;
+                                    transform: skewY(7deg);
+                                    bottom: 100%;
+                                }
+
+                                .blue {
+                                    top: 0;
+                                    opacity: 1;
+                                    transform: skewY(0);
+                                }
+                            }
 
                     }
                 }
@@ -83,6 +103,14 @@
                                     position: relative;
                                     display: block;
                                     transition: 0.4s ease-in-out;
+                                    height: 30px;
+
+                                    .black {
+                                        position: absolute;
+                                        top: 0;
+                                        transform: skewY(0);
+                                        transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+                                    }
 
                                     .blue {
                                         position: absolute;
@@ -90,18 +118,25 @@
                                         left: 0;
                                         color: #3858F6;
                                         opacity: 0;
+                                        transform: skewY(7deg);
+                                        transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+
                                     }
 
                                     &:hover {
 
-                                        transform: translateY(-100%);
+                                        // transform: translateY(-100%);
 
                                         .black {
                                             opacity: 0;
+                                            bottom: 100%;
+                                            transform: skewY(7deg);
                                         }
 
                                         .blue {
                                             opacity: 1;
+                                            top: 0;
+                                            transform: skewY(0);
                                         }
 
 
@@ -245,7 +280,9 @@
 
                 figure {
                     margin-bottom: 30px;
-
+                    img{
+                        width: 100%;
+                    }
                     figcaption {
                         text-align: center;
                         margin: 10px 0;
@@ -262,11 +299,13 @@
                 .review-title {
                     position: relative;
                     margin-bottom: 20px;
-
+                    padding-right: 10%;
                     .img {
                         max-width: 200px;
                         min-height: 200px;
+                        height: 200px;
                         margin-right: 30px;
+                        margin-bottom: 20px;
 
                         img {
                             width: 100%;
@@ -277,7 +316,7 @@
                     }
 
                     .title {
-                        width: 55%;
+                        width: 61%;
 
                         h2 {
                             font-size: 24px;
@@ -305,11 +344,11 @@
                     }
                 }
 
-                p {
-                    margin-bottom: 30px;
-                }
+                // p {
+                //     margin-bottom: 30px;
+                // }
 
-                .features {
+                .feat {
 
                     h3 {
                         font-size: 18px;
@@ -552,4 +591,162 @@
     &.beauty{
         background-color: #FBFBFD;
     }
+}
+
+
+@media(max-width:576px) {
+    .main{
+        .contain{
+            .row{
+                .left{
+                    .link-head{
+                        font-size: 23px;
+                        margin-top: 5px;
+                        margin-bottom: 15px;
+                        
+                    }
+                    .tech-bot{
+                        display: block;
+                        margin-bottom: 20px;
+                        .tech-left{
+                            margin-bottom: 15px;
+                        }
+                    
+                    }
+                    .categs{
+                        ul{
+                            flex-wrap: wrap;
+                            li{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    .articles{
+                        section{
+                            h5{
+                                font-size: 16px;
+                            }
+                            p{
+                                font-size: 16px;
+                                margin-bottom: 20px;
+                            }
+                            h1{
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                    .review{
+                        .review-title{
+                            display: block !important;
+                            padding-right: 25%;
+                            .img{
+                                width: 100%;
+                                max-width: 100%;
+                                img{
+                                    width: 100%;
+                                    
+                                }
+
+                            }
+                            .title{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media(min-width:576px) and (max-width:768px) {
+    .main{
+        .contain{
+            .row{
+                .left{
+
+                    .link-head{
+                        font-size: 25px;
+                        margin-top: 5px;
+                        margin-bottom: 20px;
+                    }
+                    .categs{
+                        ul{
+                            li{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    .articles{
+                        section{
+                            h5{
+                                font-size: 16px;
+                            }
+                            p{
+                                font-size: 16px;
+                                margin-bottom: 20px;
+                            }
+                            h1{
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                    .review{
+                        .review-title{
+                            display: block !important;
+                            padding-right: 20%;
+                            .img{
+                                width: 100%;
+                                max-width: 100%;
+                                img{
+                                    width: 100%;
+                                    
+                                }
+
+                            }
+                            .title{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media(min-width:768px) and (max-width:992px) {
+    .main{
+        .contain{
+            .row{
+                .left{
+                    .link-head{
+                        font-size: 38px;
+                        margin-top: 5px;
+                        margin-bottom: 25px;
+                    }
+                    .review{
+                        .review-title{
+                            .title{
+                                width: 55%;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+
+   
+
+}
+
+@media(min-width:1200px) {
+    
 }

@@ -1,4 +1,5 @@
 @import "responsive";
+@import "_animations";
 
 * {
     margin: 0;
@@ -72,7 +73,7 @@ a {
                             content: "";
                             position: absolute;
                             left: 0;
-                            bottom: 0;
+                            bottom: 2px;
                             width: 0;
                             height: 4px;
                             background-color: #3858f6;
@@ -83,7 +84,7 @@ a {
                     .h_drop_down_menu {
                         position: absolute;
                         left: 0;
-                        top: 100%;
+                        top: 98%;
                         z-index: 9;
                         opacity: 0;
                         visibility: hidden;
@@ -165,7 +166,7 @@ a {
                                                     }
                                                 }
                                                 > a {
-                                                    // @include ani_fly_text(#7e7e7e, #0d6efd);
+                                                    @include ani_fly_text(#7e7e7e, #0d6efd);
                                                     z-index: 999999;
                                                 }
                                                 .mega_mega_menu_nav_item_c {
@@ -212,9 +213,9 @@ a {
                                                             }
                                                             .block {
                                                                 display: flex;
-                                                                // a {
-                                                                //     @include ani_fly_text(#d93e40, #0d6efd);
-                                                                // }
+                                                                a {
+                                                                    @include ani_fly_text(#d93e40, #0d6efd);
+                                                                }
                                                             }
                                                             h5 {
                                                                 font-size: 18px;
@@ -363,7 +364,7 @@ a {
                     display: flex;
                     margin-bottom: 12px;
                     a {
-                        // @include ani_fly_text(#d93e40, #0d6efd);
+                        @include ani_fly_text(#d93e40, #0d6efd);
                         font-weight: 500;
                     }
                 }
@@ -385,9 +386,9 @@ a {
                         }
                         .left_con {
                             margin-left: 10px;
-                            // a {
-                            //     @include ani_fly_text(black, #0d6efd);
-                            // }
+                            a {
+                                @include ani_fly_text(black, #0d6efd);
+                            }
                             .l_bottom {
                                 display: block;
                                 font-size: 13px;
@@ -524,11 +525,11 @@ a {
                 }
                 .post_left {
                     padding-right: 15px;
-                    // .post_list {
-                    //     // a {
-                    //     //     @include ani_fly_text(#d93e40, #0d6efd);
-                    //     // }
-                    // }
+                    .post_list {
+                        a {
+                            @include ani_fly_text(#d93e40, #0d6efd);
+                        }
+                    }
                     .post_title {
                         margin-top: 10px;
                         h4 {
@@ -545,9 +546,9 @@ a {
                         }
                         .left_con {
                             margin-left: 10px;
-                            // a {
-                            //     // @include ani_fly_text(black, #0d6efd);
-                            // }
+                            a {
+                                @include ani_fly_text(black, #0d6efd);
+                            }
                             .l_bottom {
                                 display: block;
                                 font-size: 13px;
@@ -674,9 +675,9 @@ a {
 
                     .card_list {
                         text-align: center;
-                        // a {
-                        //     // @include ani_fly_text(#d93e40, #0d6efd);
-                        // }
+                        a {
+                            @include ani_fly_text(#d93e40, #0d6efd);
+                        }
                     }
                     .card_title {
                         text-align: center;
@@ -844,7 +845,7 @@ a {
                     .post_list {
                         a {
                             font-weight: 500;
-                            // @include ani_fly_text(#d93e40, #3858f6);
+                            @include ani_fly_text(#d93e40, #3858f6);
                         }
                     }
                     .post_title {
@@ -859,7 +860,7 @@ a {
                         align-items: center;
                         a {
                             font-size: 18px;
-                            // @include ani_fly_text(black, #0d6efd);
+                            @include ani_fly_text(black, #0d6efd);
                         }
                         .l_bottom {
                             display: block;
@@ -951,7 +952,8 @@ footer {
             .row {
                 h5 {
                     font-weight: 700;
-                    color: rgb(80, 80, 80);
+                    color: black;
+                    font-size: 18px;
                 }
                 ul {
                     margin-top: 25px;
@@ -960,7 +962,8 @@ footer {
                         margin: 10px 0;
                         a {
                             padding: 2px 0;
-                            color: rgb(78, 78, 78);
+                            font-size: 16px;
+                            color: black;
                             transition: 0.25s ease-in-out;
                             &:hover {
                                 color: #3858f6;
@@ -1009,9 +1012,9 @@ footer {
             padding: 40px 0;
             .footer_bootom_left {
                 ul {
-                    flex-wrap: wrap;
+                    // flex-wrap: no-wrap;
                     li {
-                        margin-right: 15px;
+                        margin-right: 35px;
                         a {
                             color: #878787;
                             font-weight: 500;
@@ -1027,6 +1030,7 @@ footer {
                 p {
                     font-size: 15px;
                     color: gray;
+                    text-align: right;
                 }
             }
         }
@@ -1138,11 +1142,18 @@ footer {
     }
 
     footer {
-        .footer_bootom {
-            .footer_bootom_right {
-                margin-top: 20px;
+        .contain{
+            .footer_bootom {
+                .footer_bootom_right {
+                    margin-top: 20px;
+                    p{
+                        text-align: left;
+    
+                    }
+                }
             }
         }
+        
     }
 }
 
@@ -1241,14 +1252,27 @@ footer {
     }
 
     footer {
-        .footer_top {
-            .footer_top_right {
-                margin-top: 25px;
-                h5 {
-                    font-size: 16px;
+        .contain{
+            .footer_top {
+                .footer_top_right {
+                    margin-top: 25px;
+                    h5 {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .footer_bootom{
+    
+                .footer_bootom_left{
+                    ul{
+                        li{
+                            margin-right: 18px;
+                        }
+                    }
                 }
             }
         }
+        
     }
 
     .section_header_text {
@@ -1379,6 +1403,20 @@ footer {
                 .post_nn {
                     .post_order{
                         padding-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .contain{
+            .footer_bootom{
+                .footer_bootom_left{
+                    ul{
+                        flex-wrap: wrap;
+                        li{
+                            margin-bottom: 5px;
+                        }
                     }
                 }
             }
