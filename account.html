@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology - Blogar</title>
+    <title>My account - Blogar</title>
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="vendors/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -437,11 +437,11 @@
                             </div>
                         </li>
                         <li><a href="">Lifestyle</a></li>
-                        <li><a href="">Technology</a></li>
-                        <li><a href="">Shop</a>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="shop.html">Shop</a>
                             <div class="h_drop_down_menu">
                                 <ul>
-                                    <li><a href="">Shop</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
                                     <li><a href="">Single Product</a>
                                         <div class="h_drop_down_menu">
                                             <ul>
@@ -453,7 +453,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="">My account</a></li>
+                                    <li><a href="account.html">My account</a></li>
                                     <li><a href="">Cart</a></li>
                                     <li><a href="">Checkout</a></li>
                                 </ul>
@@ -465,12 +465,12 @@
 
                 <div class="header_right col-xl-3 col-lg-3  d-flex justify-content-end">
                     <div class="search_group">
-                        <i class="fas fa-search"></i>
+                        <i class="fal fa-search"></i>
                         <input type="text" name="search" placeholder="Search ...">
                     </div>
                     <div class="box_basket">
                         <a href="#">
-                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-shopping-cart"></i>
                             <span>0</span>
                         </a>
                     </div>
@@ -499,16 +499,22 @@
     </section>
     <section class="main">
         <div class="contain">
-            
-            <h3>Login</h3>
-            <form action="">
+            <div class="acc-head">
+                <h3>Login</h3>
+
+            </div>
+            <form class="acc-form" action="">
                 <div class="user-input">
                     <label for="">Username or email address <span>*</span></label><br>
                     <input type="text" required>
                 </div>
                 <div class="user-input">
                     <label for="">Password <span>*</span></label><br>
-                    <input type="password">
+                    <div class="input">
+                        <input id="pwd" type="password" required>
+                        <i class="far fa-eye"></i>
+                    </div>
+                    
                 </div>
                 <span><input type="checkbox" id="remember">
                 <label for="remember">Remember me</label></span>
@@ -525,7 +531,7 @@
             </div>
             <div class="bottom">
                 <div class="row">
-                    <div class="col-lg-2 ">
+                    <div class="col-2 box">
                         <div class="img-box">
                             <img src="images/141988110_254903689371269_2230803479599243629_nlow.jpg" alt="">
 
@@ -539,7 +545,7 @@
 
                     </div>
 
-                    <div class="col-lg-2 ">
+                    <div class="col-2 box">
                         <div class="img-box">
                             <img src="images/141839376_2936514369917935_4016571315941196759_nlow.jpg" alt="">
 
@@ -552,7 +558,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-2 ">
+                    <div class="col-2 box">
                         <div class="img-box">
                             <img src="images/141089166_114281290521790_6806988619559217725_nlow.jpg" alt="">
 
@@ -565,7 +571,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-2 ">
+                    <div class="col-2 box">
                         <div class="img-box">
                             <img src="images/141894700_231719725109889_123836291213030030_nlow.jpg" alt="">
 
@@ -578,7 +584,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-2 ">
+                    <div class="col-2 box">
                         <div class="img-box">
                             <img src="images/142105915_842073806359300_5086671651692912917_nlow.jpg" alt="">
 
@@ -591,7 +597,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-2 ">
+                    <div class="col-2 box">
                         <div class="img-box">
                             <img src="images/143012370_1075187099671571_2884878776177104312_nlow.jpg" alt="">
 
@@ -610,6 +616,10 @@
 
 
     </section>
+    <div class="up-arrow">
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+        
+    </div>
     <footer>
         <div class="contain">
             <div class="footer_mainmenu">
@@ -703,7 +713,7 @@
                     </div>
                     <div class=" footer_top_right col-md-8">
                         <div class="d-flex justify-content-md-end align-items-center">
-                            <h5>Follow us</h5>
+                            <h5 class="m-0">Follow us</h5>
                             <div class="i_box"><i class="fab fa-facebook-f"></i></div>
                             <div class="i_box"><i class="fab fa-twitter"></i></div>
                             <div class="i_box"><i class="fab fa-linkedin-in"></i></div>
@@ -716,7 +726,7 @@
             <div class="footer_bootom">
                 <div class="row align-items-center">
                     <div class="footer_bootom_left col-lg-8">
-                        <ul class="d-flex">
+                        <ul class="d-flex m-0">
                             <li><a href="">Contact Us</a></li>
                             <li><a href="">Terms of Use</a></li>
                             <li><a href="">Advertise with Us</a></li>
@@ -724,7 +734,7 @@
                         </ul>
                     </div>
                     <div class="footer_bootom_right col-lg-4">
-                        <p>© 2021. All rights reserved by Axilthemes.</p>
+                        <p class="m-0">© 2021. All rights reserved by Axilthemes.</p>
                     </div>
                 </div>
             </div>
@@ -734,7 +744,7 @@
 
 
 
-
+    <script src="js/main.js"></script>
     <script src="vendors/js/bootstrap.bundle.js"></script>
 </body>
 

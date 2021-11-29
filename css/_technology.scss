@@ -20,6 +20,7 @@
                 margin-right: 15px;
                 color: #65676B;
                 font-size: 16px;
+                margin-bottom: 10px;
             }
 
             a {
@@ -896,6 +897,12 @@
     .page-heading {
         .contain {
             .heading {
+                ul{
+                    flex-wrap: wrap;
+                    li{
+                        margin-right: 8px;
+                    }
+                }
                 h1 {
                     font-size: 34px;
                 }
@@ -956,6 +963,12 @@
                         }
 
                     }
+                    .shop-head{
+                        p{
+                            font-size: 16px;
+                            margin: 10px 0 !important;
+                        }
+                    }
                 }
 
                 .right {
@@ -981,10 +994,10 @@
                             font-size: 16px;
                         }
                     }
-                    .stay, .gallery, .videos, .tags, .shop{
-                        padding: 20px;
+                    .stay, .gallery, .videos, .tags, .shop, .filter, .products, .product-categs{
+                        padding: 20px !important;
                         h5{
-                            font-size: 16px;
+                            font-size: 16px !important;
                         }
                     }
                     .subscribe{
@@ -1000,11 +1013,37 @@
                         }
                     }
                 }
+                
             }
+            .acc-head{
+                h3{
+                    font-size: 24px !important;
+                }
+            }
+            .acc-form{
+                h3{
+                    font-size: 24px !important;
+                }
+                label{
+                    font-size: 16px !important;
+                }
+            p{
+                a{
+                    font-size: 16px !important;
+
+                }
+
+            }
+        }
         }
     }
     .instagram{
         .contain{
+            .heading{
+                h1{
+                    font-size: 28px;
+                }
+            }
             .bottom{
                 .box{
                     width: 50%;
@@ -1024,6 +1063,11 @@
     .page-heading {
         .contain {
             .heading {
+                ul{
+                    li{
+                        margin-right: 8px;
+                    }
+                }
                 h1 {
                     font-size: 34px;
                 }
@@ -1056,6 +1100,12 @@
                         }
                     }
                 }
+                .shop-head{
+                    p{
+                        font-size: 16px !important;
+                       
+                    }
+                }
             }
 
             .right {
@@ -1081,10 +1131,10 @@
                         font-size: 16px;
                     }
                 }
-                .stay, .gallery, .videos, .tags, .shop{
-                    padding: 20px;
+                .stay, .gallery, .videos, .tags, .shop, .filter, .products, .product-categs{
+                    padding: 20px !important;
                     h5{
-                        font-size: 16px;
+                        font-size: 16px !important;
                     }
                 }
                 .subscribe{
@@ -1099,6 +1149,33 @@
                     }
                 }
 
+            }
+            .acc-head{
+                h3{
+                    font-size: 24px !important;
+                }
+            }
+            .acc-form{
+                
+                    label{
+                        font-size: 16px !important;
+                    }
+                p{
+                    a{
+                        font-size: 16px !important;
+
+                    }
+
+                }
+            }
+        }
+    }
+    .instagram{
+        .contain{
+            .heading{
+                h1{
+                    font-size: 28px;
+                }
             }
         }
     }
@@ -1153,6 +1230,20 @@
                     }
                 }
 
+            }
+            .acc-head{
+                h3{
+                    font-size: 28px !important;
+                }
+            }
+        }
+    }
+    .instagram{
+        .contain{
+            .heading{
+                h1{
+                    font-size: 32px;
+                }
             }
         }
     }

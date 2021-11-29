@@ -1,15 +1,16 @@
 .main {
     .contain {
         .left {
-            .head {
+            .shop-head {
                 margin-bottom: 40px;
-
+                flex-wrap: wrap;
                 p {
                     font-size: 18px;
                     margin-bottom: 0 !important;
                 }
 
                 select {
+                    
                     outline: none;
                     background-color: #FBFBFD;
                     border-radius: 5px;
@@ -62,11 +63,11 @@
                         a {
                             color: white;
                             background-color: #3858F6;
-                            padding: 10px 30px;
+                            padding: 5px 40px;
                             width: fit-content;
                             border-radius: 44px;
                             font-weight: 700;
-                            font-size: 14px;
+                            font-size: 12px;
                             border: 2px solid #3858F6;
                             transition: 0.4s ease-in-out;
                             text-align: center;
@@ -174,7 +175,7 @@
 
                 h5 {
                     font-size: 18px;
-                    font-weight: 600;
+                    font-weight: 700;
                     margin-bottom: 5px;
                     text-align: center;
 
@@ -249,7 +250,7 @@
 
                 h5 {
                     font-size: 18px;
-                    font-weight: 600;
+                    font-weight: 700;
                     margin-bottom: 5px;
                     text-align: center;
 
@@ -305,7 +306,7 @@
 
                 h5 {
                     font-size: 18px;
-                    font-weight: 600;
+                    font-weight: 700;
                     margin-bottom: 5px;
                     text-align: center;
 
@@ -339,3 +340,6 @@
         }
     }
 }
+
+
+

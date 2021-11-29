@@ -276,6 +276,15 @@
                         font-weight: 700;
                         margin-bottom: 20px;
                     }
+                    a{
+                        text-decoration: underline;
+                        color: black;
+                        font-weight: 500;
+                        transition: 0.3s ease-in-out;
+                        &:hover{
+                            color: #3858F6;
+                        }
+                    }
                 }
 
                 figure {
@@ -384,8 +393,8 @@
                 }
             }
 
-            form {
-                padding: 50px 0;
+            .beauty-form {
+                padding: 35px 0;
 
                 h3 {
                     font-size: 30px;
@@ -397,6 +406,7 @@
                     font-size: 14px;
                     color: #65676B;
                     margin-bottom: 20px;
+                    // text-align: left;
                 }
 
                 label {
@@ -406,7 +416,7 @@
                     margin-bottom: 10px;
                 }
 
-                input {
+                input, textarea {
                     background-color: #F0F2F5;
                     outline: none;
                     border-radius: 5px;
@@ -434,17 +444,19 @@
                 }
 
                 .comment {
-                    input {
+                    textarea {
                         width: 100%;
-                        height: 180px;
+                        height: 160px;
+                        vertical-align: text-top;
+                        resize: none;
 
                     }
 
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                 }
 
                 .checkbox {
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                     display: inline-block;
 
                     input {
@@ -510,6 +522,7 @@
         }
 
         .box {
+            margin-bottom: 30px;
             a {
                 img {
                     border-radius: 10px;
@@ -525,31 +538,51 @@
 
                 .tech-link {
                     text-decoration: none;
-                    color: #D93E40;
-                    position: relative;
-                    display: inline-block;
-                    transition: 0.4s ease-in-out;
+                        color: #D93E40;
+                        position: relative;
+                        display: inline-block;
+                        height: 20px;
 
-                    .blue {
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        color: #3858F6;
-                        opacity: 0;
                         // transition: 0.4s ease-in-out;
-                    }
-
-                    &:hover {
-                        transform: translateY(-100%);
-
                         .red {
-                            opacity: 0;
+                            transform: skewY(0);
+                            display: inline-block;
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                            // transition: 0.3s ease-in-out;
+                            transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+
                         }
 
                         .blue {
-                            opacity: 1;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            color: #3858F6;
+                            opacity: 0;
+                            transform: skewY(7deg);
+                            display: inline-block;
+                            // transition: 0.3s ease-in-out;
+                            transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+
                         }
-                    }
+
+                        &:hover {
+                            // transform: translateY(-100%);
+
+                            .red {
+                                opacity: 0;
+                                transform: skewY(7deg);
+                                bottom: 100%;
+                            }
+
+                            .blue {
+                                top: 0;
+                                opacity: 1;
+                                transform: skewY(0);
+                            }
+                        }
 
                 }
             }
@@ -653,9 +686,44 @@
                             }
                         }
                     }
+                    .beauty-form{
+                        margin-bottom: 35px;
+                        h3{
+                            font-size: 24px;
+                        }
+                        .inputs{
+                            
+                            .input{
+                                width: 100%;
+                                margin-bottom: 15px;
+                                input{
+                                    width: auto;
+                                }
+                                br{
+                                    display: none;
+                                }
+                            }
+                            
+                        }
+                        .checkbox{
+                            display: flex;
+                        }
+                    }
                 }
             }
             
+        }
+    }
+    .posts{
+        padding: 60px 0;
+
+        .contain{
+        
+            .heading{
+                h1{
+                    font-size: 28px;
+                }
+            }
         }
     }
 }
@@ -710,9 +778,40 @@
                             }
                         }
                     }
+                    .beauty-form{
+                        margin-bottom: 35px;
+                        h3{
+                            font-size: 24px;
+                        }
+                        .inputs{
+                            
+                            .input{
+                                width: 100%;
+                                margin-bottom: 15px;
+                                input{
+                                    width: 40%;
+                                }
+                                br{
+                                    display: none;
+                                }
+                            }
+                            
+                        }
+                    }
                 }
             }
             
+        }
+    }
+    .posts{
+        padding: 60px 0;
+
+        .contain{
+            .heading{
+                h1{
+                    font-size: 28px;
+                }
+            }
         }
     }
 }
@@ -734,19 +833,60 @@
                             }
                         }
                     }
+                    .beauty-form{
+                        padding: 0;
+                        margin-bottom: 70px;
+                        h3{
+                            font-size: 28px;
+                        }
+                        .inputs{
+                            display: flex;
+                        }
+                    }
                 }
             }
             
+        }
+
+    }
+    .posts{
+        .contain{
+            .heading{
+                h1{
+                    font-size: 32px;
+                }
+            }
         }
     }
 }
 
 @media(min-width:992px) and (max-width:1200px) {
-
-   
+    .main{
+        .contain{
+            .left{
+                .beauty-form{
+                    .inputs{
+                        display: flex;
+                        
+                    }
+                }
+            }
+        }
+    }
 
 }
 
 @media(min-width:1200px) {
-    
+    .main{
+        .contain{
+            .left{
+                .beauty-form{
+                    .inputs{
+                        display: flex;
+                        
+                    }
+                }
+            }
+        }
+    }
 }
