@@ -14,17 +14,7 @@ for (let i=0; i<btn.length;i++){
     }
 }
 
-// seePwd.onclick=function(){
-//     if (this.className != "far fa-eye active"){
-//         pwdTag.type="text";
-//         this.classList.add("active");
-//     }
-//     else{
-//         pwdTag.type="password";
-//         this.classList.remove("active")
-//     }
-    
-// }
+
 
 window.onscroll=function(){
     if (document.documentElement.scrollTop > 350){
@@ -35,8 +25,18 @@ window.onscroll=function(){
         upBtn.style.opacity="0"
         upBtn.style.transform="translateY(10px)"
     }
-    console.log(document.documentElement.scrollTop);
+    
 }
 
+seePwd.onclick=function(){
+    if (this.className != "far fa-eye active"){
+        pwdTag.type="text";
+        this.classList.add("active");
+    }
+    else{
+        pwdTag.type="password";
+        this.classList.remove("active")
+    }
     
+}
 

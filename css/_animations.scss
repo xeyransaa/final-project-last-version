@@ -46,6 +46,17 @@
 }
 
 
+@mixin ani_underline($col) {
+    position: relative;
+    display: inline;
+    background: linear-gradient($col);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-origin: content-box;
+    transition: background-size 0.3s;
+}
+
 
 
 
