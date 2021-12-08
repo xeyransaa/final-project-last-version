@@ -13,20 +13,16 @@ for (let i=0; i<btn.length;i++){
         this.classList.add("active")
     }
 }
-
-
-
 window.onscroll=function(){
-    if (document.documentElement.scrollTop > 350){
-        upBtn.style.opacity="1"
-        upBtn.style.transform="translateY(0)"
+    if (this.scrollY > 350){
+        upBtn.classList.add("active")
     }
     else{
-        upBtn.style.opacity="0"
-        upBtn.style.transform="translateY(10px)"
+        upBtn.classList.remove("active")
     }
     
 }
+
 
 seePwd.onclick=function(){
     if (this.className != "far fa-eye active"){

@@ -2260,6 +2260,12 @@
           transform: translateY(10px);
 }
 
+.up-arrow a.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
 .main .contain .product {
   margin-bottom: 50px;
 }
